@@ -1,7 +1,6 @@
 package view;
 
 import javax.swing.*;
-import controller.AlunoController;
 
 public class MainView {
     private AlunoController controller;

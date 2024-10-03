@@ -1,13 +1,13 @@
-package controller;
+package com.sua_empresa.Controller;
 
-import dao.AlunoDAO;
-import model.Aluno;
+import com.sua_empresa.dao.AlunoDAO;
+import com.sua_empresa.model.Aluno;
 
 public class AlunoController {
     private AlunoDAO alunoDAO;
 
     public AlunoController() {
-        this.alunoDAO = new AlunoDAO();
+        this.alunoDAO = new AlunoDAO(null);
     }
 
     public void adicionarAluno(Aluno aluno) {
