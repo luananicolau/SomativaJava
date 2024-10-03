@@ -5,7 +5,6 @@ import com.sua_empresa.dao.AlunoDAO;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.List;
 
 public class RelatorioAluno {
@@ -15,8 +14,8 @@ public class RelatorioAluno {
         this.alunoDAO = alunoDAO;
     }
 
-    public void gerarRelatorio(String caminhoArquivo) throws SQLException {
-        List<Aluno> alunos = alunoDAO.listar(); // Método para listar alunos
+    public void gerarRelatorio(String caminhoArquivo) {
+        List<Aluno> alunos = alunoDAO.listarAlunos();
 
         try (FileWriter writer = new FileWriter(caminhoArquivo)) {
             writer.write("Relatório de Alunos\n");

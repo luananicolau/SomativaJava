@@ -1,4 +1,4 @@
-package com.sua_empresa.dao;
+package com.sua_empresa;
 
 import com.sua_empresa.model.Aluno;
 
@@ -89,10 +89,5 @@ public class AlunoDAO {
         }
 
         return aluno;
-    }
-
-    public void adicionarAluno(Aluno aluno) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'adicionarAluno'");
     }
 }
